@@ -1,9 +1,7 @@
-import pickle
-from sklearn.externals import joblib
+import joblib
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
 
-mdl=joblib.load('book_recommender.pkl')
+mdl=joblib.load("book_recommender.pkl")
 df=pd.read_csv('books.csv')
 
 #first i will create a pandas series of all the movie titles to access the
